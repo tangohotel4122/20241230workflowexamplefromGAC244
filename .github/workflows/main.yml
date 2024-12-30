@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - use: action/checkout@v2
+      - uses: action/checkout@v2
       - name: Run a one-line scripact
         run: echo hello, world!
       - name: run a multi-line script
